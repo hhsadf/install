@@ -13,6 +13,7 @@ echo ">>> Miniconda cai xong" | tee -a /tmp/provisioning.log
 cd /
 git clone https://github.com/visomaster/VisoMaster.git
 cd /VisoMaster
+conda run -n visomaster python download_models.py
 echo ">>> Da clone VisoMaster ve /VisoMaster" | tee -a /tmp/provisioning.log
 
 # Tao environment + cai dat nhu trong huong dan
